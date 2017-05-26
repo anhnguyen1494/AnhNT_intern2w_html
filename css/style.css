@@ -1,0 +1,292 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*chung*/
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+
+/*nav*/
+#header{
+	height: 750px;
+	background: url(../img/bg-slide.png);
+	background-attachment: fixed;
+}
+.top-head{
+	height: 110px;
+	width: 80%;
+	margin: 0 auto;
+	border-bottom: 1px solid #fff;
+	color: white;
+}
+.logo{
+	text-align: center;
+}
+.logo img{
+	max-height: 110px;
+	-webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+}
+.navbar{
+  margin-bottom: 0px;
+  margin-top: 30px;
+}
+.navbar a{
+	color: white;
+	font-size: 20px;
+	font-family: 'Gentium Book';
+}
+.navbar-nav>li>a{
+	padding-top: 10px;
+}
+.navbar-nav>li>a:hover{
+	background: orange;
+}
+.social li{
+	padding:  10px;
+	float: left;
+	
+	font-size: 20px;
+}
+.social li a{
+	color: orange;
+}
+.social a:hover{
+	cursor: pointer;
+	color: white;
+}
+/*setfont*/
+.slogan,.about-name,.ingredient-name,.menu-title p,.review-name,.title,.price,.reservations-name,.About-title{
+	font-family: 'Yeseva One';
+}
+.content-button a,.ingredient-content,.description,.reservations-content{
+	font-family: 'Lato';
+}
+.review-content,.about-content{
+	font-family: 'Gentium Book';
+}
+.About-des,.rs-form label,.btn-orange{
+	font-family: 'OpenSans';
+}
+
+/*content-top*/
+.content-top{
+	padding: 120px 0;
+}
+.slogan{
+	width: 60%;
+	margin: 0 auto;
+	font-size: 75px;
+	color: white;
+	
+}
+	
+
+
+.content-top img{
+	max-width: 80%;
+}
+.content-button{
+	
+}
+.content-button a{
+	padding: 15px 40px;	
+	border: 1x solid black;
+	border: 1px solid white;
+	color: white;
+	margin-right: 20px;
+	font-size: 12px;
+	padding-top: 20px;
+}
+.content-button a:hover{
+	color: orange;
+}
+/*main*/
+.container{
+	width: 80%;
+}
+	/*about*/
+.about{
+	padding: 100px 0px;
+}
+
+.about-img img{
+	width: 90%;
+}
+.about-img1{
+	margin-left: 80px;
+}
+.about-name{
+	font-size: 36px;
+	color: orange;
+}
+.about-content{
+	padding: 40px;
+	font-size: 16px;
+    font-weight: 400;
+}
+	/*ingredients*/
+.ingredients{
+	padding: 100px 0;
+	color: white;
+	background: url(../img/ss-ingre-bg.png);
+	background-attachment: fixed;
+}
+.ingredients-col{
+	padding: 80px 70px;
+	background: rgba(0, 0, 0, 0.69);
+}
+.ingredient-name{
+	font-size: 36px;
+}
+.ingredient-content{
+	margin-top: 20px;
+	margin-bottom: 60px;
+	font-size: 16px;
+    font-weight: 400;
+}
+.ingredient-img{
+	overflow: hidden;
+	width: 330px;
+	margin: 0 auto;
+}
+.ingredient-img .img3{
+	width: 100px;
+	height: 100px;
+	margin: 5px;
+	overflow: hidden;
+	border: 5px solid gray;
+	border-radius: 50%;
+	position: relative;
+}
+.img3 img{
+	position: absolute;
+	top: -25%;
+	left: -65%;
+
+}
+
+.ingredient-name~img{
+	max-width: 40%;
+}
+
+	/*menu*/
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.menu{
+	padding: 100px 0;
+}
+.grid-item{
+	float: left;
+	padding: 0 60px 60px 70px;
+}
+.description{
+	clear: both;
+	padding: 10px 0 20px 0;
+}
+.menu-title p,.titleNprice{
+	color: orange;
+}
+.menu-title p{
+	font-size: 36px;
+
+}
+.titleNprice{
+	font-size: 21px;
+	overflow: hidden;
+	border-bottom: 1px solid orange;
+}
+
+	/*review*/
+.review{
+	padding: 100px 0;
+	color: white;
+	background: url(../img/ss-review-bg.png);
+	background-attachment: fixed;
+}
+.review-col{
+	padding: 80px 70px;
+	background: rgba(0, 0, 0, 0.69);
+}
+.review-name{
+	font-size: 36px;
+}
+.review-content{
+	margin-top: 20px;
+	margin-bottom: 60px;
+	font-size: 25px;
+    font-weight: 400;
+}
+.review-src{
+	font-size: 18px;
+	color: #dde0df;
+}
+
+.review-name~img{
+	max-width: 30%;
+}
+
+	/*reservation*/
+.reservations{
+	padding: 100px 0;
+}
+.img2{
+	width: 46%;
+	margin: 0 2%;
+	float: left;
+}
+.img2 img{
+	width: 100%;
+}
+.reservations-name{
+	font-size: 36px;
+	color: orange;
+}
+.reservations-content{
+	padding: 15px 40px 20px 40px;
+	font-size: 16px;
+    font-weight: 400;
+}
+.rs-form{
+	width: 48%;
+	margin-right: 2%;
+	float: left;
+}
+.rs-form label{
+	color: orange;
+}
+.btn-orange{
+	background: orange;
+	color: white;
+}
+
+	/*footer*/
+#footer{
+	padding: 50px 10px;
+	background: #191919;
+	color: white;
+}
+.About-title{
+	font-size: 21px;
+}
+.About-title~img{
+	max-width: 50%;
+}
+.logo-pay,.logo-social{
+	margin-top: 50px;
+}
+.About-des{
+	color: #c7c7c7;
+}
