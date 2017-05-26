@@ -21,6 +21,10 @@ li{
 a{
 	text-decoration: none;
 }
+body{
+	background: url('../img/bg-about.png');
+	background-attachment: fixed;
+}
 
 /*nav*/
 #header{
@@ -122,6 +126,7 @@ a{
 /*main*/
 .container{
 	width: 80%;
+
 }
 	/*about*/
 .about{
@@ -291,6 +296,9 @@ a{
 	padding: 15px 40px 20px 40px;
 	font-size: 16px;
     font-weight: 400;
+}
+.reservations-form{
+	padding: 0 40px;
 }
 .rs-form{
 	width: 48%;
