@@ -6,12 +6,14 @@
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/font.css">
+	
+	<!-- font -->
+	<link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic|Lato|Open+Sans|Yeseva+One" rel="stylesheet">
 
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/masonry.pkgd.js"></script>
-	<script type="text/javascript" src="js/notify.js"></script>
+	<script type="text/javascript" src="js/<notify class=""></notify>js"></script>
 	<link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -20,17 +22,17 @@
 		<div class="navbar-top">
 			<div class="top-head">
 				<div class="col-md-3 logo">
-					<a href="#"><img src="img/logo1.png"  alt=""></a>
+					<a href="#"><img src="img/logo.png"  alt=""></a>
 				</div>
 				<div class="menu-top pull-right">
 					<nav class="navbar-custom">
 						<ul>
-							<li><a href="#">Home</a></li>
-							<li><a href="#">About</a></li>
-							<li><a href="#">Igredients</a></li>
-							<li><a href="#">Menu</a></li>
-							<li><a href="#">Reviews</a></li>
-							<li><a href="#">Reservations</a></li>
+							<li><a href="#" id="home">Home</a></li>
+							<li><a href="#" id="about">About</a></li>
+							<li><a href="#" id="igredients">Igredients</a></li>
+							<li><a href="#" id="menu">Menu</a></li>
+							<li><a href="#" id="reviews">Reviews</a></li>
+							<li><a href="#" id="reservations">Reservations</a></li>
 							<li class="social">
 								<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 								<a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
@@ -47,8 +49,9 @@
 			</div>
 			<img src="img/hr-bg-slide.png" alt="">
 			<div class="content-button">
-				<a href="#" class="btn btn-lg " style="background: rgba(0, 0, 0, 0.64);">BOOK A TABLE</a>
-				<a href="#" class="btn btn-lg" >SEE THE MENU</a>
+				<a href="#" class="btn btn-lg" style="background: rgba(0, 0, 0, 0.64);" id="BookATable">BOOK A TABLE</a>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="#" class="btn btn-lg" id="SeeMenu">SEE THE MENU</a>
 			</div>
 		</div>
 	</header><!-- /header -->
@@ -67,7 +70,7 @@
 		</section>
 	</div>
 	<!-- /about -->
-	<section class="ingredients">
+	<section class="igredients">
 		<div class="container">
 			<div class="col-md-6 col-md-offset-6 ingredients-col text-center">
 				<div class="ingredient-name">Fine ingredients</div>
@@ -204,7 +207,7 @@
 		</section>
 	</div>
 	<!-- /menu -->
-	<section class="review">
+	<section class="reviews">
 		<div class="container">
 			<div class="col-md-8 col-md-offset-2 review-col text-center">
 				<div class="review-name">Guest Reviews</div>
@@ -311,39 +314,7 @@
 
 
 
-	<p class="special-img">Special</p>
-
-
-	<!-- script div xếp chồng -->
-	<script>
-		if (window.innerWidth > 768) {
-			$(window).scroll(function () {
-				if ($(window).scrollTop() >= 100) {
-					$('.navbar-top').addClass('navbar-fixed-top');
-				} else {
-					$('.navbar-top').removeClass('navbar-fixed-top');
-				}
-			});
-		}
-		$(document).ready(function() {
-			$('.menu-special').append('<p class="special-img">Special</p>');	
-		});
-	</script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			var elem = document.querySelector('.grid');
-			var msnry = new Masonry( elem, {
-		  	// options
-		  	itemSelector: '.grid-item',
-		  	columnWidth: 200
-		  });
-
-			// element argument can be a selector string
-			//   for an individual element
-			var msnry = new Masonry( '.grid', {
-			  // options
-			});
-		});
-	</script>
+	<script type="text/javascript" src="js/main.js"></script>
+	
 </body>
 </html>

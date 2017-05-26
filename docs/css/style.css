@@ -4,8 +4,8 @@
 }
 *:before,
 *:after {
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 /*chung*/
 a{
@@ -43,14 +43,15 @@ a{
 }
 .logo img{
 	max-height: 110px;
-	-webkit-filter: brightness(0) invert(1);
-    filter: brightness(0) invert(1);
 }
 .navbar-custom>ul>li>a{
 	color: white;
 	font-size: 20px;
 	font-family: 'Gentium Book';
 	padding: 50px 15px 0px;
+}
+.btn-lg{
+	border-radius: 0px;
 }
 .navbar-custom>ul>li{
 	float: left;
@@ -79,16 +80,16 @@ a{
 
 /*setfont*/
 .slogan,.about-name,.ingredient-name,.menu-title p,.review-name,.title,.price,.reservations-name,.About-title{
-	font-family: 'Yeseva One';
+	font-family: 'Yeseva One', cursive;
 }
 .content-button a,.ingredient-content,.description,.reservations-content{
-	font-family: 'Lato';
+	font-family: 'Lato', sans-serif;
 }
 .review-content,.about-content{
-	font-family: 'Gentium Book';
+	font-family: 'Gentium Book Basic', serif;
 }
 .About-des,.rs-form label,.btn-orange{
-	font-family: 'OpenSans';
+	font-family: 'Open Sans', sans-serif;
 }
 
 /*content-top*/
@@ -103,8 +104,6 @@ a{
 	
 }
 	
-
-
 .content-top img{
 	max-width: 80%;
 }
@@ -114,7 +113,7 @@ a{
 .content-button a{
 	padding: 15px 40px;	
 	border: 1px solid white;
-	font-size: 12px;
+	font-size: 15px;
 	color: white;
 }
 .content-button a:hover{
@@ -149,7 +148,7 @@ a{
     font-weight: 400;
 }
 	/*ingredients*/
-.ingredients{
+.igredients{
 	padding: 100px 0;
 	color: white;
 	background: url(../img/ss-ingre-bg.png);
@@ -181,12 +180,13 @@ a{
 	border: 5px solid #453d39;
 	border-radius: 50%;
 	position: relative;
+
 }
 .img3 img{
 	position: absolute;
 	top: -25%;
 	left: -65%;
-
+	
 }
 
 .ingredient-name~img{
@@ -195,7 +195,7 @@ a{
 
 	/*menu*/
 .grid:after {
-  content: '';
+  content: '';		
   display: block;
   clear: both;
 }
@@ -242,7 +242,7 @@ a{
 }
 
 	/*review*/
-.review{
+.reviews{
 	padding: 100px 0;
 	color: white;
 	background: url(../img/ss-review-bg.png);
@@ -298,7 +298,6 @@ a{
 	float: left;
 	width: 46%;
     margin-right: 4%;
-    float: left;
     margin-bottom: 25px;
 }
 .form-control{
@@ -314,6 +313,7 @@ a{
 	background: #c9a131;
 	color: white;
 	width: 46%;
+	border-radius: 0;
 }
 
 	/*footer*/
