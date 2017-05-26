@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Lato';
-    src: url('../fonts/Lato-Bold.ttf');
+    src: url('../fonts/Lato-Medium.ttf');
 }
 @font-face {
     font-family: 'Yeseva One';
@@ -8,7 +8,7 @@
 }
 @font-face {
     font-family: 'Gentium Book';
-    src: url('../fonts/GenBkBasB.ttf');
+    src: url('../fonts/GenBasR.ttf');
 }
 @font-face {
     font-family: 'OpenSans';

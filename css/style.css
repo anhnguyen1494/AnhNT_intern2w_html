@@ -8,6 +8,13 @@
     box-sizing: border-box;
 }
 /*chung*/
+a{
+	color: white;
+}
+ul{
+	margin-top: 0;
+    margin-bottom: 0px;
+}
 li{
 	list-style: none;
 }
@@ -17,15 +24,18 @@ a{
 
 /*nav*/
 #header{
-	height: 750px;
 	background: url(../img/bg-slide.png);
 	background-attachment: fixed;
+}
+.navbar-fixed-top{
+	width: 100%;
+	background: rgba(0,0,0,0.8);	
 }
 .top-head{
 	height: 110px;
 	width: 80%;
 	margin: 0 auto;
-	border-bottom: 1px solid #fff;
+/*	border-bottom: 1px solid #fff;*/
 	color: white;
 }
 .logo{
@@ -36,34 +46,37 @@ a{
 	-webkit-filter: brightness(0) invert(1);
     filter: brightness(0) invert(1);
 }
-.navbar{
-  margin-bottom: 0px;
-  margin-top: 30px;
-}
-.navbar a{
+.navbar-custom>ul>li>a{
 	color: white;
 	font-size: 20px;
 	font-family: 'Gentium Book';
+	padding: 50px 15px 0px;
 }
-.navbar-nav>li>a{
-	padding-top: 10px;
-}
-.navbar-nav>li>a:hover{
-	background: orange;
-}
-.social li{
-	padding:  10px;
+.navbar-custom>ul>li{
 	float: left;
-	
-	font-size: 20px;
+	display: block;
+	height: 110px;
+	line-height: 110px;
 }
-.social li a{
-	color: orange;
+.navbar-custom>ul>li:not(:last-of-type):hover{
+	border-top: 3px solid white;	
+}
+
+.navbar-custom>ul>li a:hover{
+	text-decoration: none;
+}
+.social {
+	float: left;
+	font-size: 20px;
+	
 }
 .social a:hover{
-	cursor: pointer;
-	color: white;
+	color: white!important;
 }
+.social a{
+	color: orange!important;
+}
+
 /*setfont*/
 .slogan,.about-name,.ingredient-name,.menu-title p,.review-name,.title,.price,.reservations-name,.About-title{
 	font-family: 'Yeseva One';
@@ -80,7 +93,7 @@ a{
 
 /*content-top*/
 .content-top{
-	padding: 120px 0;
+	padding: 100px 0 100px;
 }
 .slogan{
 	width: 60%;
@@ -96,19 +109,16 @@ a{
 	max-width: 80%;
 }
 .content-button{
-	
+	margin-top: 20px;
 }
 .content-button a{
 	padding: 15px 40px;	
-	border: 1x solid black;
 	border: 1px solid white;
-	color: white;
-	margin-right: 20px;
 	font-size: 12px;
-	padding-top: 20px;
+	color: white;
 }
 .content-button a:hover{
-	color: orange;
+	color: #cc9900;
 }
 /*main*/
 .container{
@@ -116,21 +126,25 @@ a{
 }
 	/*about*/
 .about{
-	padding: 100px 0px;
+	padding: 70px 0px 85px;
 }
 
 .about-img img{
-	width: 90%;
+    margin-left: -10px;
 }
 .about-img1{
 	margin-left: 80px;
 }
 .about-name{
 	font-size: 36px;
-	color: orange;
+	color: #cc9900;
+	margin-bottom: 10px;
+}
+.about-left{
+	padding: 25px 0;
 }
 .about-content{
-	padding: 40px;
+	padding: 30px 0px 55px;
 	font-size: 16px;
     font-weight: 400;
 }
@@ -164,7 +178,7 @@ a{
 	height: 100px;
 	margin: 5px;
 	overflow: hidden;
-	border: 5px solid gray;
+	border: 5px solid #453d39;
 	border-radius: 50%;
 	position: relative;
 }
@@ -188,16 +202,33 @@ a{
 .menu{
 	padding: 100px 0;
 }
+.menu-sub{
+	padding: 10px;
+}
+.menu-special{
+	border: 1px solid orange;
+	position: relative;
+}
+.special-img{
+	width: 70px;
+	height: 20px;
+	color: white;
+    text-align: center;
+	background: #d7bb6d;
+	position: absolute;
+	top: -20px;
+	right: -1px;
+}
 .grid-item{
 	float: left;
 	padding: 0 60px 60px 70px;
 }
 .description{
 	clear: both;
-	padding: 10px 0 20px 0;
+	padding: 10px 0;
 }
 .menu-title p,.titleNprice{
-	color: orange;
+	color: #cc9900;
 }
 .menu-title p{
 	font-size: 36px;
@@ -207,6 +238,7 @@ a{
 	font-size: 21px;
 	overflow: hidden;
 	border-bottom: 1px solid orange;
+	border-width: 90%;
 }
 
 	/*review*/
@@ -225,9 +257,10 @@ a{
 }
 .review-content{
 	margin-top: 20px;
-	margin-bottom: 60px;
+	margin-bottom: 40px;
 	font-size: 25px;
     font-weight: 400;
+    color: #dde0df;
 }
 .review-src{
 	font-size: 18px;
@@ -252,7 +285,7 @@ a{
 }
 .reservations-name{
 	font-size: 36px;
-	color: orange;
+	color: #cc9900;
 }
 .reservations-content{
 	padding: 15px 40px 20px 40px;
@@ -263,13 +296,24 @@ a{
 	width: 48%;
 	margin-right: 2%;
 	float: left;
+	width: 46%;
+    margin-right: 4%;
+    float: left;
+    margin-bottom: 25px;
+}
+.form-control{
+	border-radius: 0px;
+}
+.form-control:focus{
+	border:1px solid #cc9900;
 }
 .rs-form label{
-	color: orange;
+	color: #c9a131;
 }
 .btn-orange{
-	background: orange;
+	background: #c9a131;
 	color: white;
+	width: 46%;
 }
 
 	/*footer*/
@@ -285,8 +329,13 @@ a{
 	max-width: 50%;
 }
 .logo-pay,.logo-social{
-	margin-top: 50px;
+	margin-top: 40px;
+	font-size: 20px;
 }
 .About-des{
+	padding: 20px 0;
 	color: #c7c7c7;
+}
+.timework span{
+	color: white;
 }
